@@ -1,0 +1,131 @@
+/* this file is the stylesheet for page.html in sass */
+/* layout */
+.post-expand {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  background: whitesmoke;
+  z-index: 300;
+  box-shadow: 0px 0px 20px #024d62; }
+  .post-expand .container {
+    margin: 0 auto;
+    width: 800px; }
+    .post-expand .container .left {
+      float: left;
+      width: 420px;
+      padding-bottom: 30px;
+      position: relative;
+      padding-top: 30px; }
+      .post-expand .container .left .left-container {
+        box-shadow: 0px 10px 40px -25px #888888 inset, 0px -10px 40px -25px #888888 inset;
+        padding: 0 20px;
+        height: 410px;
+        overflow: auto; }
+        .post-expand .container .left .left-container .title {
+          margin-top: 20px;
+          font-size: 15pt;
+          color: #024d62; }
+        .post-expand .container .left .left-container .author {
+          margin-top: 10px;
+          font-size: 12pt;
+          display: inline-block;
+          color: #024d62; }
+        .post-expand .container .left .toolbar {
+          height: 24px;
+          position: absolute;
+          bottom: 30px;
+          right: 0;
+        }
+        .post-expand .container .left  .toolbar .submit-button {
+          padding: 6px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 10pt;
+          background: #024d62;
+          color: #FFF;
+          margin-left: 10px;
+          display: inline-block;
+          cursor: pointer;
+         }
+         .post-expand .container .left  .toolbar .tools {
+          display: inline-block;
+         }
+        .post-expand .container .left .left-container .content {
+            min-height: 300px;
+          margin-top: 15px;
+          font-size: 11pt; }
+    .post-expand .container .right {
+      float: left;
+      margin-left: 40px;
+      padding: 30px 0;
+      width: 340px; }
+      .post-expand .container .right .comment-box {
+        position: relative;
+        width: inherit; }
+        .post-expand .container .right .comment-box .caret {
+          position: absolute;
+          left: -16px;
+          width: 0;
+          top: 6px;
+          height: 0;
+          border-top: 12px solid transparent;
+          border-right: 16px solid #024d62;
+          border-bottom: 12px solid transparent; }
+        .post-expand .container .right .comment-box .form {
+          width: inherit;
+          padding: 10px;
+          background: #024d62;
+          display: table-cell; }
+          .post-expand .container .right .comment-box .form .profile-image {
+            float: left;
+            width: 60px;
+            height: 60px; }
+            .post-expand .container .right .comment-box .form .profile-image img {
+              width: inherit;
+              height: inherit; }
+          .post-expand .container .right .comment-box .form .field {
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px; }
+            .post-expand .container .right .comment-box .form .field .input {
+              width: 220px;
+              padding: 2px 4px;
+              background: #024d62;
+              color: whitesmoke;
+              border-top: 1px solid whitesmoke;
+              border-bottom: 1px solid whitesmoke;
+              outline: none;
+              font-size: 10pt; }
+      .post-expand .container .right .comment-container {
+        width: inherit;
+        margin-top: 10px;
+        height: 320px;
+        overflow: auto; }
+        .post-expand .container .right .comment-container .comment {
+          margin-top: 5px;
+          width: 100%;
+          position: relative;
+          min-height: 56px;
+          background: #ecf0fd; }
+          .post-expand .container .right .comment-container .comment:first-child {
+            margin-top: 0; /* no top margin for the first one */
+          }
+          .post-expand .container .right .comment-container .comment .profile-image {
+            margin: 3px;
+            width: 50px;
+            position: absolute;
+            height: 50px; }
+            .post-expand .container .right .comment-container .comment .profile-image img {
+              width: inherit;
+              height: inherit; }
+          .post-expand .container .right .comment-container .comment .comment-right {
+            padding: 4px 10px 4px 66px;
+            box-sizing: border-box;
+            width: 100%;
+            }
+            .post-expand .container .right .comment-container .comment .comment-right .username {
+              color: #024d62;
+              font-size: 11pt; }
+            .post-expand .container .right .comment-container .comment .comment-right .content {
+              margin-top: 2px;
+              font-size: 10pt; }

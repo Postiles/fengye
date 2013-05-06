@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Create_User Interface</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript">
+		function submitform(){
+            var pswd = $('#password').val();
+            var email = $('#email').val();
+            var username = $('#name').val();
+			$.ajax({
+				type: "post",			
+			  	url: "http://www.postiles.com:3000/user/this_route_does_nothing",
+			  	data: {
+			  		session_key: pswd,
+			  		user_id: '50',
+			  		email: email,
+			  		username: username,
+			  	},
+			  	success: function(r){
+			  		if(r.status == 'error'){
+			  			$("#feedback").css("display", "block");
+			  			$("#feedback").html("creation failed, please contact postiles.hkust@gmail.com");
+			  		}else{
+					  	$("#feedback").css("display", "block");
+					  	setTimeout('dismiss()', 4000);
+			  		}
+                    $.ajax({
+                        type: 'get',
+                        url: 'http://localhost:8888/smail/sendmail.php',
+                        data: {
+                            addr: email,
+                            name: username,
+                            pswd: 'asdfghjkl'
+                        },
+                        success: function(r) {
+                            console.log(r);
+                        }
+                    });
+			  	}
+			});	
+		}
+		$(document).ready(function() {
+			$("#password").keypress(function(event) {
+	    		if (event.which == 13) {
+	        		submitform();
+	    		}
+			});
+		});
+
+		function dismiss() {
+			$("#feedback").css("display", "none");
+		}
+	</script>
+
+	<style>
+		#feedback {
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+	<p> Email Address </p>
+	<input type="text" id="email" name="email" autofocus="autofocus" />
+	<p> Name </p>
+	<input type="text" id="name" name="name" />
+	<p> Your Password to create user </p>
+	<input type="password" id="password" name="password" />
+
+	<a id="submit" href="javascript:submitform()"> Submit </a>
+	<p id="feedback"> User Created successfully, an email will be sent to the email address you mentioned. you can refresh or enter another one directly </p>
+</body>
+</html>

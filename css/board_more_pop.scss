@@ -1,0 +1,252 @@
+/* layout */
+
+$main-color:    #024d61;
+$background-color:  #f2f7f7;
+$hover-background-color:  #cedadd; 
+$second-color:  #B2D08D;
+$third-color:	#C2D6AD;
+$fourth-color:  #A1CB69; 
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+    z-index: 200;
+}
+
+#board_more {
+	position: fixed !important;
+	top: 44px !important;
+	right: 0px !important;
+	left: auto !important;
+	width: 40px;
+	height: 100%;
+	background-color: $main-color;
+
+	.board_more_icon {
+		height: 30px;
+		padding: 0px;
+		margin: 8px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 14px;
+		cursor: pointer;
+	}
+
+	#prev_location {
+		background: url(../images/move_left.png) no-repeat;
+	}
+
+	#next_location {
+		background: url(../images/move_right.png) no-repeat;
+	}
+
+	#hot_location {
+		background: url(../images/hot.png) no-repeat;
+	}
+
+	#more_photo_button {
+		background: url(../images/photo_upload_icon.png) no-repeat;
+		height: 25px;
+		width: 22px;
+		margin-left:11px;
+		margin-top: 14px;
+	}
+
+	#more_video_button {
+		background: url(../images/video_upload_icon.png) no-repeat;
+		margin-top:17px;
+	}
+
+	#place {
+		margin-left: 15px;
+		margin-top: 17px;
+		background: url(../images/board_place.png) no-repeat;
+	}
+	#star {
+		margin-top: 13px;
+		margin-left: 13px;
+		background: url(../images/board_star.png) no-repeat;
+	}
+}
+
+#other_boards {
+	margin-top: 36px;
+	width: 240px;
+	position: absolute;
+	top: 10px !important;
+	right: -80px !important;
+	left: auto !important;
+	background-color: $background-color;
+	box-shadow: 3px 3px 20px 1px #888888;
+	line-height: 100%;
+
+	.other_header {
+		background-color: $main-color;
+		height: 40px;
+		color: #fff;
+		cursor: pointer;
+		&:hover {
+			background-color: #0489ac;
+		}
+
+		h3 {
+			font-size: 14px;
+			float: left;
+			margin: 10px;
+			margin-left: 14px;
+		}
+		p {
+			float: right;
+			margin-top: 14px;
+			margin-right: 15px;
+			font-size: 10px;
+			cursor: pointer;
+
+			&:hover {
+				color: #FF8C00;
+			}
+		}
+
+		.arrow_up {
+    		border-left: 10px solid transparent;
+    		border-right: 10px solid transparent;
+    		border-bottom: 10px solid $main-color;
+    		position: absolute;
+    		left: 170px;
+    		top: -8px;
+		}
+		.arrow_up_back {
+    		border-left: 12px solid transparent;
+    		border-right: 12px solid transparent;
+    		border-bottom: 12px solid #f5f5f5;
+    		position: absolute;
+    		left: 168px;
+    		top: -12px;
+		}
+	}
+
+	#board_list {
+		max-height: 400px;
+		overflow: scroll;
+		.up_roll {
+			height: 10px;
+			background-color: $background-color;
+			cursor: pointer;
+			border-bottom: 1px solid $hover-background-color;
+
+			&:hover {
+				background-color: $hover-background-color;
+			}
+
+			.list_prev {
+				position: absolute;
+				left: 115px;
+				top: 43px;
+				width: 0px;
+				height: 0px;
+    			border-left: 5px solid transparent;	
+    			border-right: 5px solid transparent;	
+    			border-bottom: 5px solid $main-color;
+			}
+		}
+		.down_roll {
+			height: 10px;
+			background-color: $background-color;
+			cursor: pointer;
+			border-top: 1px solid $hover-background-color;
+
+			&:hover {
+				background-color: $hover-background-color;
+			}
+
+			.list_next {
+				position: absolute;
+				left: 115px;
+				bottom: 3px;
+				width: 0px;
+				height: 0px;
+    			border-left: 5px solid transparent;	
+    			border-right: 5px solid transparent;	
+				border-top: 5px solid $main-color;
+			}
+		}
+
+		.listed_board {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 50px;
+			cursor: pointer;
+
+			h3.board_title {
+				width: 180px;
+				font-size: 11pt;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: 14px;
+				color: $main-color;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			p.board_discription {
+				margin-left: 14px;
+				margin-top:3px;
+				font-size: 9pt;
+				width:180px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			.selected_icon {
+				opacity: 0;
+				position: absolute;
+				right: 10px;
+				top: 25px;
+				width:20px;
+				height:20px;
+				background: url(../images/featured_board.png) no-repeat;
+			}
+
+			&:hover {
+				background: $hover-background-color;
+				position: relative;
+
+				h3.board_title {
+					font-size: 11pt;
+					margin-bottom: 0px;
+					margin-left: 14px;
+				}
+
+				.selected_icon {
+					opacity: 1;
+
+				}
+			}
+
+		}
+
+		.selected_board {
+			background: $main-color;
+			color: $third-color;
+			position: relative;
+			h3.board_title {
+				font-size: 14px;
+				margin-bottom: 0px;
+				margin-left: 14px;
+				color: #fff !important;
+			}
+			.selected_icon {
+				position: absolute;
+				right: 10px;
+				top: 25px;
+				width:20px;
+				height:20px;
+				background: url(../images/featured_board.png) no-repeat;
+			}
+		}
+	}
+
+}

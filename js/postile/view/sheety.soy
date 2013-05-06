@@ -1,0 +1,80 @@
+{namespace postile.templates.sheety}
+
+/**
+ * @param who The post subject to display
+ */
+{template .post}
+  <div class="who"> {$who} </div>
+{/template}
+
+/**
+ * @param author
+ * @param ctime
+ * @param isAnonymous
+ */
+{template .comment}
+  {if not $isAnonymous}
+  <div class="author"> {$author} </div>
+  {/if}
+  <div class="ctime"> {$ctime} </div> <br />
+{/template}
+
+/**
+ * @param canLike
+ * @param likeCount
+ * @param liked
+ */
+{template .commentLike}
+  ♡ +{$likeCount}
+  <span> · </span>
+  {if $canLike}
+    <span class="like-button">
+    {if $liked}
+     Unlike
+    {else}
+     Like
+    {/if}
+    </span>
+    <span> · </span>
+  {else}
+    Like
+  {/if}
+{/template}
+
+/**
+ * @param canDel
+ */
+{template .commentDel}
+  {if $canDel}
+  Delete
+  {/if}
+{/template}
+
+/**
+ * @param canReport
+ */
+{template .commentReport}
+  {if $canReport}
+  Report
+  {/if}
+{/template}
+
+/**
+ * @param content
+ */
+{template .commentContent}
+  <div class="content"> {$content|noAutoescape} </div>
+{/template}
+
+
+/**
+ * @param likes
+ */
+
+/**
+ * Just some buttons
+ */
+{template .newCommentPop}
+  <div class="new-comment-input"></div>
+{/template}
+

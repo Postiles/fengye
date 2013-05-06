@@ -1,0 +1,25 @@
+<!--
+<div id="popup_button" class="function_button">
+    <addr title="More Options in This Board">
+        <img src='/images/popup_icon.png' />
+    </addr>
+    <div class="pop_tip">
+        <div class="tip_arrow"></div>
+        <div class="tip_text">More</div>
+    </div>
+</div>
+
+this.moreButtonPop_isOpened = false;
+this.more_button = postile.dom.getDescendantById(instance.container, "popup_button");
+this.moreButtonPop = new postile.view.board_more_pop.BoardMorePop(this.more_button);
+goog.events.listen(this.more_button, goog.events.EventType.CLICK, function(e) {
+    e.stopPropagation();
+    if(this.moreButtonPop_isOpened){
+        this.moreButtonPop_isOpened = false;
+        this.moreButtonPop.close();
+    }else{
+        this.moreButtonPop.open(this.more_button);
+        this.moreButtonPop_isOpened = true;
+    }
+}.bind(this));
+-->

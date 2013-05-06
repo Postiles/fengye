@@ -1,0 +1,143 @@
+#search_box {
+  position: absolute;
+  line-height: 100%;
+  top: 46px !important;
+  left: -265px !important;
+}
+
+#search_box_arrow {
+  position: absolute;
+  top: -9px;
+  left: 275px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #024d61;
+  border-right: 10px solid transparent;
+}
+
+#search_box_arrow_back {
+  position: absolute;
+  left: 274px;
+  top: -13px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+  border-right: 12px solid transparent;
+}
+
+#search_box_container {
+  width: 300px;
+  background: #024d61;
+  box-shadow: 3px 3px 10px 1px #888888;
+}
+
+#search_bar {
+  width: inherit;
+  height: 40px;
+  background: #024d61; }
+
+#search_icon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/search_icon.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#search_input_field {
+  float: left;
+  margin-top: 11px;
+  margin-left: 25px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 10pt;
+  width: 225px;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke; }
+
+#search_input_field::-webkit-input-placeholder {
+  color: rgba(245, 245, 245, 0.7); }
+
+#search_caret {
+  position: relative;
+  left: 278px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-top: 8px solid #c8e5ed;
+  border-right: 6px solid transparent; }
+
+#search_result_container {
+  display: hidden;
+  background: #3d7d8e;
+  width: 300px; }
+
+.search_result_category {
+  display: table; }
+
+.search_result_title {
+  float: left;
+  width: 65px;
+  text-align: right;
+  font-size: 12pt;
+  color: whitesmoke;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  margin-right: 10px; }
+
+.search_result_content_list {
+  float: left;
+  width: 225px;
+  display: table-cell;
+  background: #c8e5ed; }
+
+.search_result_item {
+  padding: 5px;
+  width: 215px;
+  display: table;
+  cursor: pointer; }
+
+.search_result_item:hover {
+  background: #f1f1f1; }
+
+.search_result_image {
+  float: left;
+  width: 43px;
+  height: 43px; }
+
+.search_result_image img {
+  width: inherit;
+  height: inherit; }
+
+.search_result_right_container {
+  float: left;
+  margin-left: 4px;
+  padding: 4px;
+  display: table-cell;
+  width: 159px; }
+
+#search_result_post .search_result_right_container {
+  width: auto; }
+
+.search_result_item_title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  padding-top: 2px;
+  padding-left: 8px;
+  font-size: 10pt;
+  color: #3d7d8e; }
+
+.search_result_item_info {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 9pt;
+  max-width: 200px; }
