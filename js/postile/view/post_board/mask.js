@@ -3,9 +3,6 @@ goog.provide('postile.view.post_board.mask');
 goog.require('goog.events');
 goog.require('goog.dom');
 
-postile.view.post_board.MIN_SIZE = 2;
-postile.view.post_board.MAX_SIZE = 4;
-
 postile.view.post_board.PostCreator = function(post_board_obj) {
     var instance = this;
     this.board = post_board_obj;
@@ -79,20 +76,23 @@ postile.view.post_board.PostCreator.prototype.close = function() {
 
 //mouseevents for the mask
 postile.view.post_board.PostCreator.prototype.mousedown = function(e) { //find the closest grid point
-    this.start_mouse_coord = [Math.round(this.board.xPosFrom(e.clientX - this.board.viewport_position.x - this.board.canvasCoord[0])), Math.round(this.board.yPosFrom(e.clientY - this.board.viewport_position.y - this.board.canvasCoord[1]))];
+    //this.start_mouse_coord = [Math.round(this.board.xPosFrom(e.clientX - this.board.viewport_position.x - this.board.canvasCoord[0])), Math.round(this.board.yPosFrom(e.clientY - this.board.viewport_position.y - this.board.canvasCoord[1]))];
     this.new_post_start_coord_in_px = [e.clientX, e.clientY]; //used to disable warning when double clicking
-
+    
+    /*
     this.post_preview_origin_spot.style.left = this.board.xPosTo(this.start_mouse_coord[0])-17+'px';
     this.post_preview_origin_spot.style.top = this.board.yPosTo(this.start_mouse_coord[1])-17+'px';
     
     this.post_preview_origin_spot.style.display = 'block';
+    */
+    this.doWhatEverTheFuck(e);
 };
 
 postile.view.post_board.PostCreator.prototype.mousemove = function(e) { 
-    if (!this.start_mouse_coord) { 
-        return; 
-    } //mouse key not down yet
+    this.doWhatEverTheFuck(e);
+};
 
+postile.view.post_board.PostCreator.prototype.doWhatEverTheFuck = function(e) {
     var current = [this.board.xPosFrom(e.clientX - this.board.viewport_position.x - this.board.canvasCoord[0]), this.board.yPosFrom(e.clientY - this.board.viewport_position.y - this.board.canvasCoord[1])];
 
     var delta = [0, 0];
@@ -100,16 +100,9 @@ postile.view.post_board.PostCreator.prototype.mousemove = function(e) {
     var i;
 
     for (i = 0; i < 2; i++) {
-        delta[i] = current[i] - this.start_mouse_coord[i]; //calculate the expected width/height in the unit of "grid unit"
-        if (delta[i] < 0) { //if in doubt, use brute force
-            if (delta[i] > -1) { delta[i] = -1; } else { delta[i] = Math.round(delta[i]); }
-            current[i] = this.start_mouse_coord[i] + delta[i];
-            end[i] = this.start_mouse_coord[i];
-        } else {
-            if (delta[i] < 1) { delta[i] = 1; } else { delta[i] = Math.round(delta[i]); }
-            current[i] = this.start_mouse_coord[i];
-            end[i] = this.start_mouse_coord[i] + delta[i];
-        }
+        delta[i] = 1; //calculate the expected width/height in the unit of "grid unit"       
+        current[i] = Math.floor(current[i]);
+        end[i] = current[i] + 1;
     }
 
     //now "current" saves the smaller value and "end" saves the larger one
@@ -141,10 +134,8 @@ postile.view.post_board.PostCreator.prototype.mousemove = function(e) {
     this.preview.style.height = this.board.heightTo(this.position.span_y) + 'px';
 
     this.legal_intersect = (!intersect);
-    this.legal_min = this.position.span_x >= postile.view.post_board.MIN_SIZE && this.position.span_y >= postile.view.post_board.MIN_SIZE 
-    this.legal_max = this.position.span_x <= postile.view.post_board.MAX_SIZE && this.position.span_y <= postile.view.post_board.MAX_SIZE;
-
-    this.legal = this.legal_intersect && this.legal_min && this.legal_max;
+    
+    this.legal = this.legal_intersect;
 
     if (!this.imageMode) { // text or video
         this.preview.style.backgroundColor = this.legal ? '#e4eee4': '#f4dcdc';
@@ -153,17 +144,13 @@ postile.view.post_board.PostCreator.prototype.mousemove = function(e) {
 
     if(!this.legal_intersect){
         this.preview.innerHTML = "Area Occupied";
-    }else if(!this.legal_max){
-        this.preview.innerHTML = "Too big";
-    }else if(!this.legal_min){
-        this.preview.innerHTML = "Too small";
-    }else{
+    } else {
         this.preview.innerHTML = "Release to create";
     }
 
     this.preview.style.display = 'table-cell';
-    this.preview.style.fontSize = '16pt';
-};
+    this.preview.style.fontSize = '16pt'; 
+}
 
 postile.view.post_board.PostCreator.prototype.mouseup = function(e){
     this.board.disableMovingCanvas = false;

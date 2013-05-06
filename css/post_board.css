@@ -12,6 +12,7 @@ html, body {
 #title_bar {
   width: 100%;
   height: 40px;
+  /* border-bottom: 5px solid #024d61; fengye */
   border-bottom: 5px solid #024d61;
   z-index: 500;
   min-width: 1000px;
@@ -29,9 +30,48 @@ html, body {
     width: 100%;
     height: 100%;
     position: relative;
-    background: whitesmoke;
+    /*background: whitesmoke; fengye */
+    background: #D4D4D4;
     z-index: 500;
 }
+
+
+/* add for fengye's theme by fei */
+#theme_area {
+  width: 100%;
+  height: 350px;
+  background: #9D9D9D;
+}
+#theme_area #theme_main {
+  padding-top: 50px;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+
+#theme_area #theme_main #theme_image{
+  width: 250px;
+  height: 250px;
+  border: 5px solid #000;
+  border-radius: 5px;
+  float: left;
+}
+
+
+#theme_area #theme_main #theme_word{
+  display: inline-block;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 70px;
+}
+
+
+#theme_area #theme_main #theme_word span{
+  display: block;
+  font-size: 20px;
+}
+
+/* end of fei's code for fengye */
 
 #topic_image_outer {
   position: absolute;
@@ -105,7 +145,8 @@ html, body {
 
 #topic_title {
   float: left;
-  color: #024d61;
+  /*color: #024d61; for fengye */
+  color: #000;
   font-size: 14pt;
   margin-left: 80px;
   padding-top: 10px;
@@ -148,7 +189,8 @@ html, body {
   float: right; }
 
 #user_info_container {
-  color:#024d61;
+  /*color:#024d61; for fengye */
+  color: #000;
   margin-right: 10px;
 }
 
@@ -211,7 +253,8 @@ html, body {
   border-bottom: 4px solid transparent; }
 
 .accout_button {
-  color: #024d61;
+  color: #b2b2b2;
+  /*color: #024d61;  for fengye */
   float: left;
   font-size: 10pt;
   cursor: pointer; }
