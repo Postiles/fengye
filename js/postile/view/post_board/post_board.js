@@ -44,8 +44,8 @@ goog.require('postile.user');
  * Smallest unit size for a post, in pixel.
  * @const
  */
-postile.view.post_board.POST_WIDTH = 100;
-postile.view.post_board.POST_HEIGHT = 80;
+postile.view.post_board.POST_WIDTH = 160;
+postile.view.post_board.POST_HEIGHT = 160;
 postile.view.post_board.POST_MARGIN = 10;
 
 /**

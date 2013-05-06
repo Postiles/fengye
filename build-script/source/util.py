@@ -20,7 +20,7 @@ class FilePath(str):
 def download_url_to(url, out_path):
     logger.info('Downloading %s to %s', url, out_path)
     fin = urllib2.urlopen(url)
-    with open(out_path, 'w') as fout:
+    with open(out_path, 'wb') as fout:
         shutil.copyfileobj(fin, fout)
 
 def download_if_not_exist(url, out_path):
