@@ -132,7 +132,7 @@ Post
 }
 
 .at_person {
-    color: #024d61;
+    color: #3a3a3a;
     font-style: italic;
 }
 
@@ -163,14 +163,14 @@ Post
     width: 20px;
     height: 20px;
     z-index: 310;
-    box-shadow: 0px 0px 6px #024d61;
+    box-shadow: 0px 0px 6px #3a3a3a;
     cursor: pointer;
     border-radius: 10px;
     transition: box-shadow 0.5s;
     -moz-transition: box-shadow 0.5s;
     -webkit-transition: box-shadow 0.5s; }
 .close-button:hover {
-    box-shadow: 0px 0px 15px #024d61; }
+    box-shadow: 0px 0px 15px #3a3a3a; }
 .close-button .x {
     position: relative;
     left: 7px;

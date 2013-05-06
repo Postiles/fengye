@@ -12,8 +12,8 @@ html, body {
 #title_bar {
   width: 100%;
   height: 40px;
-  /* border-bottom: 5px solid #024d61; fengye */
-  border-bottom: 5px solid #024d61;
+  /* border-bottom: 5px solid #3a3a3a; fengye */
+  border-bottom: 5px solid #3a3a3a;
   z-index: 500;
   min-width: 1000px;
 
@@ -83,7 +83,7 @@ html, body {
   width: 50px;
   height: 50px;
   padding: 5px;
-  background: #024d61;
+  background: #3a3a3a;
   cursor: pointer;
 
   box-shadow: 0px 0px 4px #000;
@@ -110,7 +110,7 @@ html, body {
   width: 0;
   height: 0;
   border-top: 6px solid transparent;
-  border-left: 8px solid #024d61;
+  border-left: 8px solid #3a3a3a;
   border-bottom: 6px solid transparent; }
 
 #topic_image_tip {
@@ -145,7 +145,7 @@ html, body {
 
 #topic_title {
   float: left;
-  /*color: #024d61; for fengye */
+  /*color: #3a3a3a; for fengye */
   color: #000;
   font-size: 14pt;
   margin-left: 80px;
@@ -189,7 +189,7 @@ html, body {
   float: right; }
 
 #user_info_container {
-  /*color:#024d61; for fengye */
+  /*color:#3a3a3a; for fengye */
   color: #000;
   margin-right: 10px;
 }
@@ -214,7 +214,7 @@ html, body {
 
 .account_login_button {
   padding: 4px 8px;
-  background: #024d61;
+  background: #3a3a3a;
   color: #fff;
   margin-top: 8px;
   cursor: pointer;
@@ -230,7 +230,7 @@ html, body {
   width: 30px;
   height: 30px;
   padding: 3px;
-  background: #024d61;
+  background: #3a3a3a;
   cursor: pointer;
 }
 
@@ -249,12 +249,12 @@ html, body {
   width: 0;
   height: 0;
   border-top: 4px solid transparent;
-  border-right: 6px solid #024d61;
+  border-right: 6px solid #3a3a3a;
   border-bottom: 4px solid transparent; }
 
 .accout_button {
   color: #b2b2b2;
-  /*color: #024d61;  for fengye */
+  /*color: #3a3a3a;  for fengye */
   float: left;
   font-size: 10pt;
   cursor: pointer; }
@@ -464,14 +464,6 @@ html, body {
   background: url(/images/noisy_grid.png);
   display: none; }
 
-.post_content {
-  position: relative;
-  /* overflow: hidden; */
-  line-height: 140%;
-  width: 100%; 
-  cursor: default;
-}
-
 .selectable {
   /* XXX closure-stylesheet
   user-select: text;
@@ -628,7 +620,7 @@ div.post_preview_text {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     color: #F6F6F6;
-    background: #024d61 url(/images/link.png) 4px 4px no-repeat;
+    background: #3a3a3a url(/images/link.png) 4px 4px no-repeat;
     padding: 0 4px 0 21px;
     line-height: 21px;
     font-size: 10pt;

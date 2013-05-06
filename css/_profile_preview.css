@@ -19,14 +19,14 @@
         top: 100px;
         width: inherit;
         height: inherit;
-        background: #024d61;
-        box-shadow: 0px 0px 8px #024d61; }
+        background: #3a3a3a;
+        box-shadow: 0px 0px 8px #3a3a3a; }
       .profile-preview .image-container .left-fold .front-page {
         position: relative;
         width: 50px;
         height: inherit;
         margin-top: 9px;
-        background: #024d61;
+        background: #3a3a3a;
         z-index: 310;
         transform: skewY(20deg);
         -moz-transform: skewY(20deg);
@@ -37,8 +37,8 @@
       width: 200px;
       height: 200px;
       border-radius: 10px;
-      border: 5px #024d61 solid;
-      box-shadow: 0px 0px 8px #024d61; }
+      border: 5px #3a3a3a solid;
+      box-shadow: 0px 0px 8px #3a3a3a; }
       .profile-preview .image-container .profile-picture .image {
         width: inherit;
         height: inherit;
@@ -72,9 +72,9 @@
       position: relative;
       z-index: 310;
       padding: 20px;
-      background: #024d61;
+      background: #3a3a3a;
       color: #ececec;
-      box-shadow: 0px 0px 8px #024d61; }
+      box-shadow: 0px 0px 8px #3a3a3a; }
       .profile-preview .info-container .top .username {
         font-size: 13pt; }
         .profile-preview .info-container .top .username .edit {
@@ -113,10 +113,10 @@
       margin-left: 10px;
       padding: 20px;
       padding-bottom: 30px;
-      background: #bacfd5;
+      background: #ccc;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-      box-shadow: 0px 0px 8px #bacfd5; }
+      box-shadow: 0px 0px 8px #ccc; }
       .profile-preview .info-container .bottom .item-container .item {
         margin-top: 6px;
         display: table; }
@@ -131,7 +131,7 @@
           float: left;
           margin-left: 10px; }
           .profile-preview .info-container .bottom .item-container .item .text .data {
-            color: #024d61;
+            color: #3a3a3a;
             cursor: pointer; }
             .profile-preview .info-container .bottom .item-container .item .text .data input {
               border: none;

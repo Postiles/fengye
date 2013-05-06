@@ -4,7 +4,7 @@
   font-size: 10pt;
   z-index: 100;
   box-sizing: border-box;
-  box-shadow: 0px 0px 1px #024d61; }
+  box-shadow: 0px 0px 1px #3a3a3a; }
   .post_wrap .mode {
     width: 100%;
     height: 100%; }
@@ -26,8 +26,16 @@
       text-decoration: underline; }
   .post_wrap .display_mode_post:hover .post_flag_button {
     visibility: visible; }
-  .post_wrap .display_mode_post .post_content {
-    overflow: hidden; }
+  .post_wrap .display_mode_post .post_content_container {
+    width: 100%; }
+    .post_wrap .display_mode_post .post_content_container .candle_container {
+      float: left;
+      width: 40px; }
+    .post_wrap .display_mode_post .post_content_container .post_content {
+      overflow: hidden;
+      position: relative;
+      line-height: 140%;
+      cursor: default; }
   .post_wrap .display_mode_post .post_quote_mark {
     position: absolute;
     top: 50%;
@@ -47,7 +55,7 @@
       top: -20px; }
   .post_wrap .comment_mode_post .post_bottom .comment_container {
     width: 100%;
-    background: #cfdade;
+    background: #ccc;
     padding-top: 3px; }
     .post_wrap .comment_mode_post .post_bottom .comment_container .comment_list {
       margin-top: 4px;
@@ -66,7 +74,7 @@
           display: table-cell; }
           .post_wrap .comment_mode_post .post_bottom .comment_container .comment_list .comment_container_items .post_comment .comment_inner_container .upper_container .comment_name {
             float: left;
-            color: #537cbe;
+            color: #777;
             padding: 0px;
             cursor: pointer;
             max-width: 100px;
@@ -110,8 +118,8 @@
           top: 0px;
           width: 100%;
           height: 100%;
-          background: #cfdade;
-          color: #024d61;
+          background: #ccc;
+          color: #3a3a3a;
           font-size: 8pt;
           text-align: center;
           display: none; }
@@ -121,7 +129,7 @@
             left: 50%;
             margin-left: -37px; }
             .post_wrap .comment_mode_post .post_bottom .comment_container .comment_list .comment_container_items .post_comment .confirm_delete_container .confirm_delete_inner_container .option {
-              color: #537cbe;
+              color: #777;
               cursor: pointer; }
               .post_wrap .comment_mode_post .post_bottom .comment_container .comment_list .comment_container_items .post_comment .confirm_delete_container .confirm_delete_inner_container .option:hover {
                 text-decoration: underline; }
@@ -148,18 +156,18 @@
       top: 4px;
       float: right;
       cursor: pointer;
-      color: #024d61; }
+      color: #3a3a3a; }
       .post_wrap .comment_mode_post .post_bottom .comment_container .comment_list_close_button:hover {
         text-decoration: underline; }
   .post_wrap .edit_mode_post {
-    box-shadow: 0px 0px 8px #537cbe; }
+    box-shadow: 0px 0px 8px #777; }
     .post_wrap .edit_mode_post .post_title {
       margin-left: -1px;
       margin-top: -2px;
       height: 20px;
       border: none;
       outline: none;
-      color: #024d61;
+      color: #3a3a3a;
       background: #f5f5f5;
       font-size: 10pt; }
     .post_wrap .edit_mode_post .post_wysiwyf_icon_container {
@@ -183,27 +191,27 @@
     background: whitesmoke;
     opacity: 0.8; }
     .post_wrap .locked_mode_post .lock_display {
-      color: #024d61;
+      color: #3a3a3a;
       text-align: center;
       position: relative;
       top: 30px;
       font-size: 13pt; }
       .post_wrap .locked_mode_post .lock_display .lock_username {
         cursor: pointer;
-        color: #537cbe; }
+        color: #777; }
         .post_wrap .locked_mode_post .lock_display .lock_username:hover {
           text-decoration: underline; }
   .post_wrap .new_mode_post {
     background: whitesmoke; }
     .post_wrap .new_mode_post .new_display {
-      color: #024d61;
+      color: #3a3a3a;
       text-align: center;
       position: relative;
       top: 30px;
       font-size: 13pt; }
       .post_wrap .new_mode_post .new_display .new_username {
         cursor: pointer;
-        color: #537cbe; }
+        color: #777; }
         .post_wrap .new_mode_post .new_display .new_username:hover {
           text-decoration: underline; }
   .post_wrap .confirm_delete_mode_post {
@@ -212,14 +220,14 @@
     background: whitesmoke;
     opacity: 0.8; }
     .post_wrap .confirm_delete_mode_post .confirm_display {
-      color: #024d61;
+      color: #3a3a3a;
       text-align: center;
       position: relative;
       top: 30px;
       font-size: 13pt; }
       .post_wrap .confirm_delete_mode_post .confirm_display .confirm_item {
         cursor: pointer;
-        color: #537cbe;
+        color: #777;
         padding: 0px 5px; }
         .post_wrap .confirm_delete_mode_post .confirm_display .confirm_item:hover {
           text-decoration: underline; }
@@ -236,7 +244,7 @@
     width: 100%; }
   .post_container .post_top {
     height: 18px;
-    color: #024d61;
+    color: #3a3a3a;
     font-size: 10pt; }
   .post_container .post_title_container {
     float: left;
@@ -253,7 +261,7 @@
   .post_container .post_author {
     float: right;
     cursor: pointer;
-    color: #537cbe;
+    color: #777;
     max-width: 100px;
     white-space: nowrap;
     overflow: hidden;
@@ -265,7 +273,7 @@
     font-size: 8pt; }
   .post_container .post_like_container {
     float: left;
-    color: #537cbe; }
+    color: #777; }
   .post_container .post_like_count_el {
     float: left; }
   .post_container .post_like_button {
@@ -291,7 +299,7 @@
   .post_container .comment_preview {
     font-size: 9pt;
     padding: 2px 12px;
-    background: #cfdade;
+    background: #ccc;
     display: none;
     cursor: pointer; }
   .post_container .comment_preview_no_comment {
@@ -301,7 +309,7 @@
   .post_container .comment_preview_author {
     float: left;
     cursor: pointer;
-    color: #537cbe;
+    color: #777;
     max-width: 100px;
     white-space: nowrap;
     overflow: hidden;
@@ -313,7 +321,7 @@
     margin-right: 3px; }
   .post_container .comment_preview_content {
     float: left;
-    color: #024d61;
+    color: #3a3a3a;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
