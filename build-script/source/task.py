@@ -58,15 +58,15 @@ def fetch_tools():
         logger.info('Installing scss')
         subprocss.call(maybe_add_sudo(['gem', 'install', 'scss']))
 
-    with ZipFile(tmp / CLOSURE_ZIP) as f:
-        logger.info('Extracting closure library')
-        f.extractall(tmp)
-    with ZipFile(tmp / JS_COMPILER_ZIP) as f:
-        logger.info('Extracting closure compiler')
-        f.extractall(tmp)
-    with ZipFile(tmp / SOY_ZIP) as f:
-        logger.info('Extracting closure template compiler')
-        f.extractall(tmp)
+    f = ZipFile(tmp / CLOSURE_ZIP)
+    logger.info('Extracting closure library')
+    f.extractall(tmp)
+    f = ZipFile(tmp / JS_COMPILER_ZIP)
+    logger.info('Extracting closure compiler')
+    f.extractall(tmp)
+    f = ZipFile(tmp / SOY_ZIP)
+    logger.info('Extracting closure template compiler')
+    f.extractall(tmp)
 
     logger.info('Copying closure library into project tree')
     shutil.rmtree(PROJ_ROOT / 'third_party', True)
@@ -187,7 +187,7 @@ def prod_deploy():
 @reg_task
 def dev_bootstrap():
     fetch_tools()
-    def_build_all()
+    dev_build_all()
 
 @reg_task
 def dev_build_all():
