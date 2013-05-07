@@ -41,7 +41,7 @@ postile.view.search_box.SearchBox.prototype.open = function(a, b){
     postile.view.TipView.prototype.open.call(this,a,b);
     // Change trigger button background 
     this.triggerButton = a;
-    this.triggerButton.style.background = '#024d61';
+    this.triggerButton.style.background = '#3a3a3a';
     this.search_input_field.focus();
     var imgTag = goog.dom.getElementsByTagNameAndClass('img', '', this.triggerButton);
     imgTag[0].setAttribute('src', postile.conf.imageResource(['search_icon_active.png']));   
