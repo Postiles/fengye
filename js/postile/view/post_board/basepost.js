@@ -158,10 +158,6 @@ postile.view.BasePost.prototype.loadDisplayModeUIComponents = function() {
         postGradientMask_el: $('post_gradient_mask'),
         postEditButton_el: $('post_edit_button'),
         postFlagButton_el: $('post_flag_button'),
-        postLikeContainer_el: $('post_like_container'),
-        postLikeCount_el: $('post_like_count'),
-        postLikeButton_el: $('post_like_button'),
-        postLikeMiddle2_el: $('post_like_middle_2'),
         postCommentCount_el: $('post_comment_count'),
         commentPreview_el: $('comment_preview'),
         commentPreviewNoComment_el: $('comment_preview_no_comment'),
@@ -300,6 +296,7 @@ postile.view.BasePost.prototype.initDisplayModeListener = function() {
             profileView.open(710);
         }.bind(this));
 
+    /*
     // like clicked
     goog.events.listen(
         elements.postLikeButton_el, 
@@ -323,6 +320,7 @@ postile.view.BasePost.prototype.initDisplayModeListener = function() {
                     }
                 }.bind(this));
         }.bind(this));
+        */
 
     // comment count clicked, enter comment mode
     goog.events.listen(
@@ -584,7 +582,7 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
     var elements = this.displayModeElements;
     elements.postTitle_el.innerHTML = this.postData.post.title;
 
-    elements.postLikeCount_el.innerHTML = this.postData.likes.length;
+    // elements.postLikeCount_el.innerHTML = this.postData.likes.length;
 
     if (!this.isInAnonymousBoard()) {
         postile.data_manager.getUserData(
@@ -602,6 +600,7 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
         elements.postNoTitle_el.style.display = 'none';
     }
 
+    /*
     var liked_users = this.postData.likes.map(function(l) {
         return l.user_id;
     });
@@ -616,6 +615,7 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
     } else {
         elements.postLikeMiddle2_el.style.display = 'none';
     }
+    */
 
     // display number of comments
     this.resetCommentCount();
