@@ -48,7 +48,7 @@ postile.view.board_more_pop.BoardMorePop.prototype.open = function(a,b){
     postile.view.TipView.prototype.open.call(this,a,b);
     // save the icon button that trigger open html
     this.triggerButton = a;
-    this.triggerButton.style.background = '#024d61';
+    this.triggerButton.style.background = '#3a3a3a';
     var imgTag = goog.dom.getElementsByTagNameAndClass('img', '', this.triggerButton);
     imgTag[0].setAttribute('src', postile.conf.imageResource(['popup_icon_active.png']));
 }

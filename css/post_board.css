@@ -14,7 +14,7 @@ html, body {
   height: 40px;
   /* border-bottom: 5px solid #3a3a3a; fengye */
   border-bottom: 5px solid #3a3a3a;
-  z-index: 500;
+  z-index: 200;
   min-width: 1000px;
 
   /**
