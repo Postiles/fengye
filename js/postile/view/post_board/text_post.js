@@ -63,6 +63,8 @@ postile.view.post.text_post.TextPost.prototype.enterDisplayMode = function() {
 
     // candle
     elements.postCandleContainer_el.style.display = 'inline';
+    
+    elements.postCandleContainer_el.innerHTML = '<img src="'+postile.conf.imageResource(['candle.gif'])+'" />';
 
     // set gradient position
     elements.postGradientMask_el.style.width = elements.postContent_el.offsetWidth + 'px';
