@@ -154,6 +154,7 @@ postile.view.BasePost.prototype.loadDisplayModeUIComponents = function() {
         postNoTitle_el: $('post_no_title'),
         postTitle_el: $('post_title'),
         postAuthor_el: $('post_author'),
+        postCandleContainer_el: $('candle_container'),
         postContent_el: $('post_content'),
         postGradientMask_el: $('post_gradient_mask'),
         postEditButton_el: $('post_edit_button'),

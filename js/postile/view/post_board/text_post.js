@@ -61,6 +61,9 @@ postile.view.post.text_post.TextPost.prototype.enterDisplayMode = function() {
     elements.postContent_el.style.height = this.wrap_el.offsetHeight - 70 - marginTop + 'px';
     postile.bbcodePostProcess(elements.postContent_el);
 
+    // candle
+    elements.postCandleContainer_el.style.display = 'inline';
+
     // set gradient position
     elements.postGradientMask_el.style.width = elements.postContent_el.offsetWidth + 'px';
 }

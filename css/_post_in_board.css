@@ -30,7 +30,8 @@
     width: 100%; }
     .post_wrap .display_mode_post .post_content_container .candle_container {
       float: left;
-      width: 40px; }
+      width: 40px;
+      display: none; }
     .post_wrap .display_mode_post .post_content_container .post_content {
       overflow: hidden;
       position: relative;
