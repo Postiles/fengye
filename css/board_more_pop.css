@@ -11,7 +11,7 @@ body {
   left: auto !important;
   width: 40px;
   height: 100%;
-  background-color: #024d61; }
+  background-color: #3a3a3a; }
   #board_more .board_more_icon {
     height: 30px;
     padding: 0px;
@@ -55,12 +55,12 @@ body {
   box-shadow: 3px 3px 20px 1px #888888;
   line-height: 100%; }
   #other_boards .other_header {
-    background-color: #024d61;
+    background-color: #3a3a3a;
     height: 40px;
     color: #fff;
     cursor: pointer; }
     #other_boards .other_header:hover {
-      background-color: #0489ac; }
+      background-color: #8a8a8a; }
     #other_boards .other_header h3 {
       font-size: 14px;
       float: left;
@@ -77,7 +77,7 @@ body {
     #other_boards .other_header .arrow_up {
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-bottom: 10px solid #024d61;
+      border-bottom: 10px solid #3a3a3a;
       position: absolute;
       left: 170px;
       top: -8px; }
@@ -95,9 +95,9 @@ body {
       height: 10px;
       background-color: #f2f7f7;
       cursor: pointer;
-      border-bottom: 1px solid #cedadd; }
+      border-bottom: 1px solid #8a8a8a; }
       #other_boards #board_list .up_roll:hover {
-        background-color: #cedadd; }
+        background-color: #8a8a8a; }
       #other_boards #board_list .up_roll .list_prev {
         position: absolute;
         left: 115px;
@@ -106,14 +106,14 @@ body {
         height: 0px;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-bottom: 5px solid #024d61; }
+        border-bottom: 5px solid #3a3a3a; }
     #other_boards #board_list .down_roll {
       height: 10px;
       background-color: #f2f7f7;
       cursor: pointer;
-      border-top: 1px solid #cedadd; }
+      border-top: 1px solid #8a8a8a; }
       #other_boards #board_list .down_roll:hover {
-        background-color: #cedadd; }
+        background-color: #8a8a8a; }
       #other_boards #board_list .down_roll .list_next {
         position: absolute;
         left: 115px;
@@ -122,7 +122,7 @@ body {
         height: 0px;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #024d61; }
+        border-top: 5px solid #3a3a3a; }
     #other_boards #board_list .listed_board {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -134,7 +134,7 @@ body {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 14px;
-        color: #024d61;
+        color: #3a3a3a;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis; }
@@ -155,7 +155,7 @@ body {
         height: 20px;
         background: url(../images/featured_board.png) no-repeat; }
       #other_boards #board_list .listed_board:hover {
-        background: #cedadd;
+        background: #8a8a8a;
         position: relative; }
         #other_boards #board_list .listed_board:hover h3.board_title {
           font-size: 11pt;
@@ -164,7 +164,7 @@ body {
         #other_boards #board_list .listed_board:hover .selected_icon {
           opacity: 1; }
     #other_boards #board_list .selected_board {
-      background: #024d61;
+      background: #3a3a3a;
       color: #c2d6ad;
       position: relative; }
       #other_boards #board_list .selected_board h3.board_title {

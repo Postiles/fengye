@@ -32,6 +32,10 @@
         color: #9e9e9e; }
   #onlinepeople_container #online_people_bar {
     background: #666666;
+    /*
+    background: $light-main;
+    fengye
+    */
     height: 20px;
     color: #FFF;
     cursor: pointer; }

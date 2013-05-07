@@ -1,8 +1,8 @@
 /* layout */
 
-$main-color:    #024d61;
+$main-color:    #3a3a3a;
 $background-color:  #f2f7f7;
-$hover-background-color:  #cedadd; 
+$hover-background-color:  #8a8a8a; 
 $second-color:  #B2D08D;
 $third-color:	#C2D6AD;
 $fourth-color:  #A1CB69; 
@@ -87,7 +87,7 @@ body {
 		color: #fff;
 		cursor: pointer;
 		&:hover {
-			background-color: #0489ac;
+			background-color: $hover-background-color;
 		}
 
 		h3 {

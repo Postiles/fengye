@@ -12,7 +12,7 @@
     margin: 0px;
     padding: 0px; }
   #notifications_pop_up .notifications_header {
-    background: #024d61;
+    background: #3a3a3a;
     height: 30px;
     font-size: 13px;
     color: #fff; }
@@ -33,7 +33,7 @@
     #notifications_pop_up .notifications_header .arrow_up {
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
-      border-bottom: 10px solid #024d61;
+      border-bottom: 10px solid #3a3a3a;
       position: absolute;
       top: -9px;
       left: 240px; }
@@ -52,7 +52,7 @@
       width: 40px;
       height: 40px;
       margin: 10px;
-      background: #024d61; }
+      background: #3a3a3a; }
     #notifications_pop_up #notification_list .notification .title {
       padding-top: 10px; }
       #notifications_pop_up #notification_list .notification .title p {
@@ -95,13 +95,13 @@
         #notifications_pop_up #notification_list .notification .notification_footer p.friend_accept:hover {
           text-decoration: underline; }
     #notifications_pop_up #notification_list .notification:hover {
-      background: #cedadd; }
+      background: #bababa; }
       #notifications_pop_up #notification_list .notification:hover .notification_footer p.ignore {
         opacity: 1; }
       #notifications_pop_up #notification_list .notification:hover .notification_footer p.friend_accept {
         opacity: 1; }
   #notifications_pop_up .notification_more {
-    border-top: 1px solid #024d61;
+    border-top: 1px solid #3a3a3a;
     height: 30px;
     cursor: pointer; }
     #notifications_pop_up .notification_more p {
@@ -109,6 +109,6 @@
       width: 70px;
       font-size: 13px;
       padding-top: 7px;
-      color: #024d61; }
+      color: #3a3a3a; }
     #notifications_pop_up .notification_more:hover {
-      background: #cedadd; }
+      background: #bababa; }

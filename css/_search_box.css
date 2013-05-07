@@ -12,7 +12,7 @@
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
-  border-bottom: 10px solid #024d61;
+  border-bottom: 10px solid #3a3a3a;
   border-right: 10px solid transparent;
 }
 
@@ -29,14 +29,14 @@
 
 #search_box_container {
   width: 300px;
-  background: #024d61;
+  background: #3a3a3a;
   box-shadow: 3px 3px 10px 1px #888888;
 }
 
 #search_bar {
   width: inherit;
   height: 40px;
-  background: #024d61; }
+  background: #3a3a3a; }
 
 #search_icon {
   float: left;
@@ -73,7 +73,7 @@
 
 #search_result_container {
   display: hidden;
-  background: #3d7d8e;
+  background: #5d5d5d;
   width: 300px; }
 
 .search_result_category {
@@ -95,7 +95,7 @@
   float: left;
   width: 225px;
   display: table-cell;
-  background: #c8e5ed; }
+  background: #c5c5c5; }
 
 .search_result_item {
   padding: 5px;
