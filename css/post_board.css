@@ -201,6 +201,10 @@ html, body {
 .account_item {
   float: right; }
 
+#feedback_button {
+  display: none;
+}
+
 #user_info_container {
   /*color:#3a3a3a; for fengye */
   color: #000;
@@ -245,6 +249,7 @@ html, body {
   padding: 3px;
   background: #3a3a3a;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 #profile_image_container .image {
