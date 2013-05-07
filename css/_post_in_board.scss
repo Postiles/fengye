@@ -43,14 +43,18 @@
             visibility: visible;
         }
 
+        .candle_container {
+            float: left;
+            width: 40px;
+            display: none;
+
+            img {
+                width: 80px;
+            }
+        }
+
         .post_content_container {
             width: 100%;
-
-            .candle_container {
-                float: left;
-                width: 40px;
-                display: none;
-            }
 
             .post_content {
                 overflow: hidden;
