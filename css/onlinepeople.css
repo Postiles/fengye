@@ -3,7 +3,7 @@
   width: 200px;
   line-height: 100%;
   position: fix !important;
-  background: #f2f7f7;
+  background: #f2f2f2;
   box-shadow: -1.5px 0px 3px 1px #888888; }
   #onlinepeople_container p {
     margin: 0px;
@@ -14,13 +14,13 @@
     #onlinepeople_container #online_people_list .item_container {
       height: 50px; }
       #onlinepeople_container #online_people_list .item_container:hover {
-        background: #cedadd; }
+        background: #ccc; }
     #onlinepeople_container #online_people_list img.onlinepeople_profile {
       float: left;
       width: 40px;
       height: 40px;
       margin: 5px;
-      background: #024d61; }
+      background: #3a3a3a; }
     #onlinepeople_container #online_people_list .title {
       padding: 10px;
       padding-left: 15px; }
@@ -31,7 +31,7 @@
         font-size: 10px;
         color: #9e9e9e; }
   #onlinepeople_container #online_people_bar {
-    background: #436b77;
+    background: #666666;
     height: 20px;
     color: #FFF;
     cursor: pointer; }
