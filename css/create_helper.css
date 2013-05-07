@@ -1,5 +1,5 @@
 #create_helper_wrapper {
-	background: #024d61;
+	background: #3a3a3a;
 	width: 83px;
 	height: 120px;
 	/* margin-left: -33px; */
@@ -30,15 +30,15 @@
 }
 
 #create_helper_wrapper .text_post:hover {
-    background: #F9CF3A;
+    background: #aaaaaa;
 }
 
 #create_helper_wrapper .picture_post:hover {
-    background: #FD5E21;
+    background: #aaaaaa;
 }
 
 #create_helper_wrapper .video_post:hover {
-    background: #299B26;
+    background: #aaaaaa;
 }
 
 #create_helper_wrapper .text_post img {
