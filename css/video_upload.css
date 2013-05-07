@@ -45,7 +45,7 @@
   width: 400px; }
   #upload_video_pop .video_button {
     font-size: 14px;
-    background: #024d61;
+    background: #3a3a3a;
     width: 68px;
     height: 17px;
     color: #fff;
@@ -61,7 +61,7 @@
     #upload_video_pop .upload_video_upper .info_part {
       margin-top: 15px;
       font-size: 13px;
-      color: #024d61;
+      color: #3a3a3a;
       margin-left: 30px; }
       #upload_video_pop .upload_video_upper .info_part .link_part {
         margin-left: 15px;

@@ -26,9 +26,9 @@
         font-size: 25px;
         margin: 10px auto;
         display: block;
-        color: #024d61; }
+        color: #3a3a3a; }
       #upload_image_pop .upload_drag_board .upload_content span.upload_or {
-        color: #024d61;
+        color: #3a3a3a;
         width: 20px;
         font-size: 10px;
         margin: 10px auto;
@@ -71,7 +71,7 @@
       margin: 1px 3px;
       cursor: pointer;
       padding: 3px 8px;
-      background: #024d61;
+      background: #3a3a3a;
       width: 52px;
       height: 12px;
       color: #fff;

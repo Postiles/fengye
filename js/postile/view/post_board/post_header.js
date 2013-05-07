@@ -29,6 +29,18 @@ postile.view.post_board.Header = function(boardData) {
     this.topicTitle_el = postile.dom.getDescendantById(this.topicInnerContainer_el, 'topic_title');
     this.topicTitle_el.innerHTML = this.boardData.name;
 
+    this.theme_area = postile.dom.getDescendantById(instance.container, 'theme_area');
+    this.theme_main = postile.dom.getDescendantById(instance.container, 'theme_main');
+    this.theme_word = postile.dom.getDescendantById(instance.container, 'theme_word');
+    this.fold_toggle_button = postile.dom.getDescendantById(instance.container, 'fold_button');
+    this.folded = false;
+
+    goog.events.listen(this.fold_toggle_button, goog.events.EventType.CLICK, function(){
+        this.fold_toggle();
+    }.bind(this));
+
+    this.theme_image = postile.dom.getDescendantById(instance.container, 'theme_image');
+
     this.topicDescription_el = postile.dom.getDescendantById(this.topicInnerContainer_el, 'topic_description');
     this.topicDescription_el.innerHTML = this.boardData.description;
 
@@ -61,6 +73,32 @@ postile.view.post_board.Header.prototype.close = function() {
     this.account_.close();
     goog.base(this, 'close');
 };
+
+
+postile.view.post_board.Header.prototype.fold_toggle =  function(){
+    if(this.folded){
+
+        this.folded = false;
+        this.theme_area.style.height = '350px';
+
+        this.theme_image.style.width = '250px';
+        this.theme_image.style.height = '250px';
+
+        this.theme_main.style.paddingTop = '50px';
+        this.theme_word.style.paddingTop = '100px';
+
+    } else {
+
+        this.folded = true;
+        this.theme_area.style.height = '150px';
+
+        this.theme_image.style.width = '100px';
+        this.theme_image.style.height = '100px';
+        this.theme_main.style.paddingTop = '25px';
+        this.theme_word.style.paddingTop = '12px';
+
+    }
+}
 
 postile.view.post_board.Header.prototype.dismissOthers = function() {
 }
