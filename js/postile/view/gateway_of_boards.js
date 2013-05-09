@@ -21,6 +21,7 @@ postile.view.BoardList = function(topic) {
 
     instance.title_inc = postile.dom.getDescendantByClass(instance.container, "subtitle_incognito");
     instance.title_pub = postile.dom.getDescendantByClass(instance.container, "subtitle_public");
+    instance.real_title = postile.dom.getDescendantByClass(instance.container, "real_title");
     instance.add = postile.dom.getDescendantByClass(instance.container, "add");
     instance.right = postile.dom.getDescendantByClass(instance.container, "right");
     instance.right_title = postile.dom.getDescendantByClass(instance.right, "title");
@@ -59,6 +60,9 @@ postile.view.BoardList = function(topic) {
         for(i in boardArray) {
             instance.renderBoardListItem(boardArray[i]);
         }
+    });
+    postile.ajax([ 'topic', 'get_topic' ], { topic_id: topic }, function(data) {
+        instance.real_title.innerHTML = data.message.topic.name;
     });
     var account = new postile.view.account.Account();
     account.container.style.position = "absolute";
