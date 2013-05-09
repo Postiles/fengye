@@ -1164,8 +1164,10 @@ postile.view.post_board.PostBoard.prototype.removePost = function(id) {
 }
 
 postile.view.post_board.PostBoard.prototype.updateTop = function() {
+    /*
     console.log(this.newbulletin.parentNode.parentNode.scrollLeft);
     this.realbulletin.style.left = (window.innerWidth - this.realbulletin.offsetWidth) / 2 + this.newbulletin.parentNode.parentNode.scrollLeft + 'px';
+    */
 }
 
 /**
