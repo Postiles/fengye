@@ -159,6 +159,7 @@ postile.view.BasePost.prototype.loadDisplayModeUIComponents = function() {
         postGradientMask_el: $('post_gradient_mask'),
         postEditButton_el: $('post_edit_button'),
         postFlagButton_el: $('post_flag_button'),
+        postDateTime_el: $('post_datetime'),
         postCommentCount_el: $('post_comment_count'),
         commentPreview_el: $('comment_preview'),
         commentPreviewNoComment_el: $('comment_preview_no_comment'),
@@ -638,6 +639,10 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
 
     // display number of comments
     this.resetCommentCount();
+
+    elements.postDateTime_el.innerHTML = 'shabi';
+    elements.postDateTime_el.innerHTML = postile.date(
+        this.postData.post.created_at, 'inline');
 
     if (this.isSelfPost()) { // my own post
         // elements.postContent_el.style.cursor = 'auto';

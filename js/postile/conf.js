@@ -17,7 +17,7 @@ postile.conf = {
 
     dport: 3001,
 
-    fayeLocation: 'http://condolence.postiles.com:9292/faye',
+    fayeLocation: 'http://condolence.postiles.com:9293/faye',
 
     wrapper: null,
 
