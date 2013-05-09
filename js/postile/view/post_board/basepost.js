@@ -297,6 +297,18 @@ postile.view.BasePost.prototype.initDisplayModeListener = function() {
             profileView.open(710);
         }.bind(this));
 
+    goog.events.listen(
+        elements.postCandleContainer_el,
+        goog.events.EventType.CLICK,
+        function(e) {
+            postile.ajax(
+                [ 'post', 'like' ],
+                { post_id: this.postData.post.id },
+                function(data) {
+                    elements.postCandleContainer_el.style.opacity = '1.0';
+                }.bind(this));
+        }.bind(this));
+
     /*
     // like clicked
     goog.events.listen(
@@ -582,6 +594,12 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
 
     var elements = this.displayModeElements;
     elements.postTitle_el.innerHTML = this.postData.post.title;
+
+    if (this.postData.likes.length) {
+        elements.postCandleContainer_el.style.opacity = '1.0';
+    } else {
+        elements.postCandleContainer_el.style.opacity = '0.2';
+    }
 
     // elements.postLikeCount_el.innerHTML = this.postData.likes.length;
 

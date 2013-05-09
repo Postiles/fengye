@@ -6,7 +6,7 @@
   margin: 0px;
   background: whitesmoke;
   z-index: 300;
-  box-shadow: 0px 0px 20px #024d62; }
+  box-shadow: 0px 0px 20px #3a3a3a; }
   .post-expand .container {
     margin: 0 auto;
     width: 800px; }
@@ -24,12 +24,12 @@
         .post-expand .container .left .left-container .title {
           margin-top: 20px;
           font-size: 15pt;
-          color: #024d62; }
+          color: #3a3a3a; }
         .post-expand .container .left .left-container .author {
           margin-top: 10px;
           font-size: 12pt;
           display: inline-block;
-          color: #024d62; }
+          color: #3a3a3a; }
         .post-expand .container .left .toolbar {
           height: 24px;
           position: absolute;
@@ -41,7 +41,7 @@
           height: 12px;
           line-height: 12px;
           font-size: 10pt;
-          background: #024d62;
+          background: #3a3a3a;
           color: #FFF;
           margin-left: 10px;
           display: inline-block;
@@ -69,12 +69,12 @@
           top: 6px;
           height: 0;
           border-top: 12px solid transparent;
-          border-right: 16px solid #024d62;
+          border-right: 16px solid #3a3a3a;
           border-bottom: 12px solid transparent; }
         .post-expand .container .right .comment-box .form {
           width: inherit;
           padding: 10px;
-          background: #024d62;
+          background: #3a3a3a;
           display: table-cell; }
           .post-expand .container .right .comment-box .form .profile-image {
             float: left;
@@ -90,7 +90,7 @@
             .post-expand .container .right .comment-box .form .field .input {
               width: 220px;
               padding: 2px 4px;
-              background: #024d62;
+              background: #3a3a3a;
               color: whitesmoke;
               border-top: 1px solid whitesmoke;
               border-bottom: 1px solid whitesmoke;
@@ -106,7 +106,7 @@
           width: 100%;
           position: relative;
           min-height: 56px;
-          background: #ecf0fd; }
+          background: #eee; }
           .post-expand .container .right .comment-container .comment:first-child {
             margin-top: 0; /* no top margin for the first one */
           }
@@ -124,7 +124,7 @@
             width: 100%;
             }
             .post-expand .container .right .comment-container .comment .comment-right .username {
-              color: #024d62;
+              color: #3a3a3a;
               font-size: 11pt; }
             .post-expand .container .right .comment-container .comment .comment-right .content {
               margin-top: 2px;

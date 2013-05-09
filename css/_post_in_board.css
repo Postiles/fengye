@@ -29,9 +29,11 @@
   .post_wrap .display_mode_post .candle_container {
     float: left;
     width: 40px;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .post_wrap .display_mode_post .candle_container img {
-      width: 80px; }
+      margin-top: 10px;
+      width: 34px; }
   .post_wrap .display_mode_post .post_content_container {
     width: 100%; }
     .post_wrap .display_mode_post .post_content_container .post_content {

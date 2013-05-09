@@ -72,7 +72,7 @@ html, body {
   top: 45px;
   width: 160px;
   height: 160px;
-  background: #e2672b;
+  background: #888;
   z-index: -1;
   transform: rotate(-30deg);
   -moz-transform: rotate(-30deg);
@@ -86,7 +86,7 @@ html, body {
   top: 30px;
   width: 160px;
   height: 160px;
-  background: #b13535;
+  background: #666;
   z-index: -2;
   transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
@@ -100,7 +100,7 @@ html, body {
   top: 60px;
   width: 160px;
   height: 160px;
-  background: #decb41;
+  background: #ccc;
   z-index: -3;
   transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -118,7 +118,7 @@ html, body {
   padding-left: 20px;
   padding-right: 30px;
   height: 70px;
-  background: rgba(2, 77, 97, 0.53);
+  background: rgba(50, 50, 50, 0.53);
   z-index: -1;
   border-radius: 8px;
   color: #eaeaea;
@@ -132,7 +132,7 @@ html, body {
 }
 
 #sign-up-button:hover {
-  background: rgba(2, 77, 97, 0.7);
+  background: rgba(50, 50, 50, 0.7);
 }
 
 #login-form-fold {
@@ -142,7 +142,7 @@ html, body {
   z-index: -1;
   margin-left: -20px;
   margin-top: -35px;
-  background: rgba(1, 34, 42, 0.5);
+  background: rgba(20, 20, 20, 0.5);
   transform: skewY(-20deg);
   -moz-transform: skewY(-20deg);
   -o-transform: skewY(-20deg);
@@ -155,15 +155,15 @@ html, body {
   width: 430px;
   height: 160px;
   /* @alternate */
-  background: linear-gradient(left, #024d61, #007580, #024d61);
+  background: linear-gradient(left, #3a3a3a, #505050, #3a3a3a);
   /* @alternate */
-  background: -moz-linear-gradient(left, #024d61, #007580, #024d61);
+  background: -moz-linear-gradient(left, #3a3a3a, #505050, #3a3a3a);
   /* @alternate */
-  background: -o-linear-gradient(left, #024d61, #007580, #024d61);
+  background: -o-linear-gradient(left, #3a3a3a, #505050, #3a3a3a);
   /* @alternate */
-  background: -ms-linear-gradient(left, #024d61, #007580, #024d61);
+  background: -ms-linear-gradient(left, #3a3a3a, #505050, #3a3a3a);
   /* @alternate */
-  background: -webkit-linear-gradient(left, #024d61, #007580, #024d61);
+  background: -webkit-linear-gradient(left, #3a3a3a, #505050, #3a3a3a);
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   border-top-right-radius: 10px;
@@ -211,7 +211,7 @@ html, body {
   width: inherit;
   height: 26px;
   text-align: right;
-  color: #024d61;
+  color: #3a3a3a;
   font-size: 10pt;
   padding-right: 8px;
   background: #eaeaea;
@@ -228,7 +228,7 @@ html, body {
 }
 
 #login-form-container .login-fields input:focus {
-  box-shadow: inset 0px 0px 8px #c2cfd2;
+  box-shadow: inset 0px 0px 8px #ccc;
 }
 
 #login-form-container .incorrect {
@@ -264,7 +264,7 @@ html, body {
   top: 80px;
   width: 120px;
   height: 40px;
-  background: #024d61;
+  background: #3a3a3a;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   z-index: 1;
   clip: rect(-10px, 115px, 50px, 0px);
@@ -281,8 +281,8 @@ html, body {
   width: 120px;
   height: 120px;
   cursor: pointer;
-  background: #024d61;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 150px #ffc873;
+  background: #3a3a3a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 150px #bbb;
   border-radius: 60px;
   transition: box-shadow 0.4s;
   -moz-transition: box-shadow 0.4s;
@@ -292,7 +292,7 @@ html, body {
 }
 
 #login-button-container .login-button:hover .button-back {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 190px #ffc873;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 190px #bbb;
 }
 
 #login-button-container .login-button .button-back .button-inner {
@@ -301,7 +301,7 @@ html, body {
   height: 100px;
   left: 10px;
   top: 10px;
-  background: #024d61;
+  background: #3a3a3a;
   border-radius: 50px;
   transition: background 0.4s;
   -moz-transition: background 0.4s;
@@ -311,7 +311,7 @@ html, body {
 }
 
 #login-button-container .login-button:hover .button-back .button-inner {
-  background: #e2672b;
+  background: #999;
 }
 
 #login-button-container .login-button .button-back .button-inner img {
@@ -327,7 +327,7 @@ html, body {
   top: 5px;
   left: 12px;
   font-family: OxygenBold;
-  color: #024d61;
+  color: #3a3a3a;
   font-size: 24pt;
   transition: color 0.4s, text-shadow 0.4s;
   -moz-transition: color 0.4s, text-shadow 0.4s;
@@ -337,8 +337,8 @@ html, body {
 }
 
 #login-button-container .login-button:hover .text {
-  text-shadow: 0px 0px 10px #e2672b;
-  color: #e2672b;
+  text-shadow: 0px 0px 10px #999;
+  color: #999;
 }
 
 #external-login-container {
@@ -366,7 +366,7 @@ html, body {
 }
 
 #external-login-container .login-form-container {
-  color: #024d61;
+  color: #3a3a3a;
   padding: 20px;
   padding-top: 5px;
 }
@@ -398,7 +398,7 @@ html, body {
   border: none;
   padding-left: 8px;
   font-size: 10pt;
-  color: #024d61;
+  color: #3a3a3a;
   font-family: RobotoRegular;
   border-radius: 3px;
   box-shadow: inset 0px 0px 8px #666666;
@@ -420,7 +420,7 @@ html, body {
 #external-login-container .text {
   margin-left: 70px;
   margin-top: 2px;
-  color: #024d61;
+  color: #3a3a3a;
   float: left;
   font-size: 9pt;
 }

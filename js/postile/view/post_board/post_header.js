@@ -87,6 +87,8 @@ postile.view.post_board.Header.prototype.fold_toggle =  function(){
         this.theme_main.style.paddingTop = '50px';
         this.theme_word.style.paddingTop = '100px';
 
+        this.fold_toggle_button.innerHTML = '&gt;&gt';
+
     } else {
 
         this.folded = true;
@@ -97,6 +99,7 @@ postile.view.post_board.Header.prototype.fold_toggle =  function(){
         this.theme_main.style.paddingTop = '25px';
         this.theme_word.style.paddingTop = '12px';
 
+        this.fold_toggle_button.innerHTML = '&lt;&lt';
     }
 }
 

@@ -48,6 +48,7 @@ html, body {
   position: absolute;
   right: 50px;
   bottom: 20px;
+  -webkit-transform: rotate(-90deg) scale(2, 4);
   cursor: pointer;
 }
 #theme_area #fold_button:hover {
