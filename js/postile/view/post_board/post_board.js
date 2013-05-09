@@ -157,6 +157,7 @@ postile.view.post_board.handlers.resize = function(instance) {
 
     // Update according to the new subscribe area.
     // instance.updateSubscribeArea();
+    instance.updateTop();
 }
 
 /**
@@ -475,6 +476,26 @@ postile.view.post_board.PostBoard.prototype.initView = function() {
     this.catchall.rel_data = this;
     this.viewport.rel_data = this;
     this.canvas.rel_data = this;
+    
+    /*********************************************************************************
+    this.newbulletin = goog.dom.createDom("div");
+    goog.dom.appendChild(this.canvas, this.newbulletin);
+    this.newbulletin.id = "newbulletin";
+    this.newbulletin.style.width = '100%';
+    this.newbulletin.style.height = '350px';
+    this.newbulletin.style.position = 'absolute';
+    this.newbulletin.style.top = '0';
+    this.newbulletin.style.left = '0';
+    this.newbulletin.style.background = '#9d9d9d';
+    this.realbulletin = goog.dom.createDom("div");
+    this.realbulletin.style.position = 'absolute';
+    this.realbulletin.style.width = '800px';
+    this.realbulletin.style.height = '100%';
+    this.realbulletin.innerHTML = '<div id="theme_area">     <div id="theme_main">        <img id="theme_image" src="../images/fengye.png" alt="theme_image"/>        <div id="theme_word">            <span> To Our Best Friend </span>            <span> Ye Feng </span>            <span> 1990-2012 </span>        </div>    </div>    </div>';
+    this.realbulletin.style.fontSize = '120px';
+    this.realbulletin.style.textAlign = 'center';
+    goog.dom.appendChild(this.newbulletin, this.realbulletin);
+    /*********************************************************************************/
 
     // for MAC, now also allow mouse drag
     // if (!goog.userAgent.MAC) {
@@ -878,6 +899,7 @@ postile.view.post_board.PostBoard.prototype.getSubscribeArea = function(source) 
  */
 postile.view.post_board.PostBoard.prototype.updateSubscribeArea = function() {
     // postile.toast.title_bar_toast('Loading posts for you...', 0);
+    this.updateTop();
     var instance = this;
     var current_loc = this.canvasCoord;
     var to_subscribe = this.getSubscribeArea(current_loc);
@@ -1139,6 +1161,10 @@ postile.view.post_board.PostBoard.prototype.removePost = function(id) {
     delete this.currentPosts[id];
 }
 
+postile.view.post_board.PostBoard.prototype.updateTop = function() {
+    console.log(this.newbulletin.parentNode.parentNode.scrollLeft);
+    this.realbulletin.style.left = (window.innerWidth - this.realbulletin.offsetWidth) / 2 + this.newbulletin.parentNode.parentNode.scrollLeft + 'px';
+}
 
 /**
  * Status code. Must be kept in sync with backend.
