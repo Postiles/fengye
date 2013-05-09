@@ -350,6 +350,7 @@ postile.view.post_board.PostBoard = function(board_id) {
                 postile.data_manager.getUserData(
                     localStorage.postile_user_id,
                     function(data) {
+                        /*
                         postile.ajax(
                             [ 'user', 'get_additional_data' ],
                             { target_user_id: data.id },
@@ -358,6 +359,7 @@ postile.view.post_board.PostBoard = function(board_id) {
                                     postile.router.dispatch('tutorial');
                                 }
                         });
+                        */
 
                         instance.userData = data;
 
