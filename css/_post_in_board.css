@@ -1,6 +1,6 @@
 .post_wrap {
   position: absolute;
-  background: whitesmoke;
+  background: white;
   font-size: 10pt;
   z-index: 100;
   box-sizing: border-box;
@@ -32,7 +32,6 @@
     display: none;
     cursor: pointer; }
     .post_wrap .display_mode_post .candle_container img {
-      margin-top: 10px;
       width: 34px; }
   .post_wrap .display_mode_post .post_content_container {
     width: 100%; }
@@ -335,7 +334,7 @@
   position: absolute;
   bottom: 27px;
   height: 40px;
-  background: -webkit-linear-gradient(top, rgba(244, 244, 244, 0) 0%, #f4f4f4 100%); }
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%); }
 
 .picture_post {
   background-position: center;

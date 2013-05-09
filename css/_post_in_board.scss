@@ -1,6 +1,6 @@
 .post_wrap {
     position: absolute;
-    background: whitesmoke;
+    background: white;
     font-size: 10pt;
     z-index: 100;
     box-sizing: border-box;
@@ -50,7 +50,6 @@
             cursor: pointer;
 
             img {
-                margin-top: 10px;
                 width: 34px;
             }
         }
@@ -529,7 +528,7 @@
         position: absolute;
         bottom: 27px;
         height: 40px;
-        background: -webkit-linear-gradient(top, rgba(244, 244, 244, 0) 0%, rgba(244, 244, 244, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
     }
 }
 

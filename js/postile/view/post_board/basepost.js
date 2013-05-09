@@ -306,7 +306,7 @@ postile.view.BasePost.prototype.initDisplayModeListener = function() {
                 [ 'post', 'like' ],
                 { post_id: this.postData.post.id },
                 function(data) {
-                    elements.postCandleContainer_el.style.opacity = '1.0';
+                    elements.postCandleContainer_el.innerHTML = '<img src="'+postile.conf.imageResource(['candle-on.gif'])+'" />';
                 }.bind(this));
         }.bind(this));
 
@@ -597,9 +597,9 @@ postile.view.BasePost.prototype.enterDisplayMode = function() {
     elements.postTitle_el.innerHTML = this.postData.post.title;
 
     if (this.postData.likes.length) {
-        elements.postCandleContainer_el.style.opacity = '1.0';
+        elements.postCandleContainer_el.innerHTML = '<img src="'+postile.conf.imageResource(['candle-on.gif'])+'" />';
     } else {
-        elements.postCandleContainer_el.style.opacity = '0.2';
+        elements.postCandleContainer_el.innerHTML = '<img src="'+postile.conf.imageResource(['candle-off.gif'])+'" />';
     }
 
     // elements.postLikeCount_el.innerHTML = this.postData.likes.length;
