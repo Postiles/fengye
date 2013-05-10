@@ -282,6 +282,7 @@ postile.view.AbstractTipView.prototype.open = function(reference, parent) {
     if (!parent) {
         parent = reference.parentNode;
     }
+    console.log(parent);
 
     var coord = goog.style.getRelativePosition(reference, parent);
     goog.style.setPosition(this.container_wrap, coord);
