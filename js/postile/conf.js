@@ -13,11 +13,11 @@ goog.require('goog.events.KeyHandler');
  */
 postile.conf = {
 
-    dhost: 'condolence.postiles.com',
+    dhost: 'fengye.postiles.com',
 
     dport: 3001,
 
-    fayeLocation: 'http://condolence.postiles.com:9293/faye',
+    fayeLocation: 'http://fengye.postiles.com:9293/faye',
 
     wrapper: null,
 
