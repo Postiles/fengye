@@ -1,7 +1,6 @@
 goog.provide('postile.view.account');
 
 goog.require('postile.view.inline_login');
-goog.require('postile.view.post_board.LatestPosts');
 
 /*
 opt_boardData: set iff inside a board/sheet
@@ -23,7 +22,6 @@ postile.view.account.Account = function(opt_boardData) {
     
     if (opt_boardData) {
         postile.view.account.initComponents.switch_board(instance, opt_boardData);
-        postile.view.account.initComponents.latest_posts(instance, opt_boardData);
     }
     
     if (!document.body.getAttribute("postiles-chrome-plugin-injected")) {
@@ -226,15 +224,6 @@ postile.view.account.initComponents = {
         feedback.style.fontSize = '14px';
         goog.events.listen(feedback, goog.events.EventType.CLICK, function() {
             new postile.feedback.FeedbackData();
-        });
-    },
-    latest_posts: function(instance, board_data) {
-        var lp = instance.createAccountItem('latest_posts');
-        lp.innerHTML = 'LATEST_POSTS';
-        var tip = new postile.view.post_board.LatestPosts(board_data);
-        goog.events.listen(lp, goog.events.EventType.CLICK, function(e) {
-            e.stopPropagation();
-            tip.open(lp);
         });
     }
 };
