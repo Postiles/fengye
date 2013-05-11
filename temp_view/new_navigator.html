@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>creater_helper</title>
+
+	<style>
+
+		#new_navigator_wrapper {
+			height: 39px;
+		}
+
+		#new_navigator_wrapper .new_navigator_pop{
+			float: left;
+		}
+
+		#new_navigator_wrapper  .new_navigator_button {
+			background: #024d61;
+			padding: 10px;
+			cursor: pointer;
+			position: relative;
+			float: left;
+			color: #fff;
+			z-index: 100px;
+		}
+		#new_navigator_wrapper  .new_navigator_button:hover {
+			background: #FF3333;
+		}
+
+		#new_navigator_wrapper .new_navigator_next {
+			background: #024d61;
+			padding: 10px;
+			display: inline-block;
+			color: #fff;
+			cursor: pointer;
+			margin-left: -30px;
+			-webkit-transition: margin-left 0.2s;
+			-moz-transition: margin-left 0.2s;
+			transition: margin-left 0.2s;
+			z-index: 99px;
+		}
+		#new_navigator_wrapper .new_navigator_next:hover {
+			background: #FF6666;
+		}
+
+		#new_navigator_wrapper .next_navigate_out {
+			margin-left: 0px;
+		}
+		#new_navigator_wrapper .next_navigate_in {
+			margin-left: -30px;
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<div id = "new_navigator_wrapper">
+		<div class = "new_navigator_pop">
+			<div class = "new_navigator_button">
+				FIND NEW
+			</div>
+			<div class = "new_navigator_next">
+				>>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

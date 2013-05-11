@@ -214,7 +214,7 @@ postile.view.account.initComponents = {
         });  
     },
     feedback: function(instance) {  
-        var feedback = instance.createAccountItem('feedback_button'); //no use
+        var feedback = instance.createAccountItem('feedback_button');
         feedback.innerHTML = 'Feedback';
         feedback.style.cursor = 'pointer';
         feedback.style.margin = '6px 4px 0 10px';

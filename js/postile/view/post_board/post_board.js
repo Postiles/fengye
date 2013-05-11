@@ -33,6 +33,7 @@ goog.require('postile.view.confirm_delete');
 goog.require('postile.view.profile');
 goog.require('postile.view.image_upload');
 goog.require('postile.view.create_helper');
+goog.require('postile.view.new_navigator');
 goog.require('postile.view.video_upload');
 goog.require('postile.view.search_box');
 goog.require('postile.view.post_board.post_picker');
@@ -440,12 +441,14 @@ postile.view.post_board.PostBoard.prototype.initView = function() {
     this.header = new postile.view.post_board.Header(this.boardData);
     this.postCreator = new postile.view.post_board.PostCreator(this);
     this.create_helper = new postile.view.create_helper.CreateHelper(this);
+    this.new_navigator = new postile.view.new_navigator.NewNavigator(this);
 
     goog.dom.appendChild(this.catchall, this.viewport);
     goog.dom.appendChild(this.viewport, this.canvas);
 
     goog.dom.appendChild(goog.dom.getElement("wrapper"), this.header.container);
     goog.dom.appendChild(goog.dom.getElement("wrapper"), this.catchall);
+    goog.dom.appendChild(goog.dom.getElement("wrapper"), this.new_navigator.container);
 
     postile.data_manager.getUserData(localStorage.postile_user_id, function(data) {
         if(data.user_id){ // login and show
