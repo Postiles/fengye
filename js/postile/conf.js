@@ -32,7 +32,7 @@ postile.conf = {
     },
 
     uploadsResource: function(input) {
-        return "http://condolence-uploads.postiles.com/"+input.join("/"); // kind of hack
+        return "http://fengye-uploads.postiles.com/"+input.join("/"); // kind of hack
     },
 
     /**
