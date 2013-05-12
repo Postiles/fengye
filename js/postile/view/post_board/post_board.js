@@ -484,7 +484,7 @@ postile.view.post_board.PostBoard.prototype.initView = function() {
     this.viewport.rel_data = this;
     this.canvas.rel_data = this;
     
-    /*********************************************************************************
+    /********************************************************************************
     this.newbulletin = goog.dom.createDom("div");
     goog.dom.appendChild(this.canvas, this.newbulletin);
     this.newbulletin.id = "newbulletin";
