@@ -57,6 +57,9 @@ postile.view.BoardList = function(topic) {
     postile.ajax([ 'board', 'get_boards_in_topic' ], { topic_id: topic }, function(data) {
         /* handle the data return after getting the boards information back */
         var boardArray = data.message.boards;
+        if (boardArray.length == 1) {
+            postile.router.dispatch('/board/' + boardArray[0].board.id);
+        }
         for(i in boardArray) {
             instance.renderBoardListItem(boardArray[i]);
         }
