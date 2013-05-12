@@ -53,4 +53,3 @@ postile.view.login.LoginView.prototype.login = function() {
         this.incorrect_el.style.visibility = 'visible';
     }.bind(this));
 }
-

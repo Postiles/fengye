@@ -114,11 +114,11 @@ html, body {
   top: 50px;
   left: -75px;
   width: 40px;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 30px;
-  height: 70px;
-  background: rgba(50, 50, 50, 0.53);
+  height: 85px;
+  background: rgba(100, 100, 100, 0.53);
   z-index: -1;
   border-radius: 8px;
   color: #eaeaea;
