@@ -1,0 +1,98 @@
+<div id="admin_user_in_topic">
+	<h2> Current User Management </h2> 
+	<table id="admin_user_table">
+		<tr>
+			<td>Name</td>
+			<td>Role</td>
+		</tr>
+	</table>
+
+	<p> Note: Admin can view and modify on this admin page. </p>
+	<p>       Edit can view and create content inside boards in this topic </p>
+	<p>       Edit can view boards in this topic </p>
+</div>	
+
+<div id="admin_user_invite">
+	<h2> Invitation Management </h2> 
+	<p>Invitation Request InBox</p>
+	<table id="admin_new_user_table">
+		<tr>
+			<td>Name</td>
+			<td>Date</td>
+			<td>Message</td>
+		</tr>
+	</table>
+	</br>
+	<p>Invitation Request Sent</p>
+	<table id="admin_user_invite_table">
+		<tr>
+			<td>Name</td>
+			<td>Date</td>
+			<td>Message</td>
+		</tr>
+	</table>
+	</br>
+	<span id="invite_new" class="button"> Invite other people </span>
+</div>	
+
+<div id="admin_content_control">
+	<h2> Content Control </h2> 
+
+	<p>Delete Instruction: first search the post or comment, then delete the entry by entering the id</p>
+
+	<!-- for post -->
+
+	<h3> For a Post </h3>
+	<input type="text" id="key_words_post" placeholder="Search for post" name="key_words_post"/>
+
+	</br>
+	</br>
+	<div id="post_result_list">
+	</div>
+
+	<p> id of post you want to delete </p>
+	<input type="text" id="id_post" placeholder="Input your id here" name="id"/>
+
+	<span class="button"> delete </span>
+	<p id="feedback"> delete successfully </p>
+
+	<!-- for comment -->
+
+	<h3> For a Comment </h3>
+	<input type="text" id="key_words_comment" placeholder="Search for Comment" name="key_words_comment"/>
+	</br>
+	</br>
+
+	<div id="comment_result_list">
+
+	</div>
+
+	<p> id of comment you want to delete </p>
+	<input type="text" id="id_comment" placeholder="Input your id here" name="id"/>
+
+	<span class="button"> delete </span>
+	<p id="feedback"> delete successfully </p>
+
+</div>
+	
+<div id="admin_topic_info">
+	<h2> Topic and Board Control </h2> 
+
+	<p class="current_topic_name"> XXX </p>
+	<input type="text" id="board_discription" placeholder="New Name for the topic" name="discription"/>
+	<span class="button">OK</span>
+
+	<!-- still need a topic type (private or public)
+		
+	-->
+
+
+	<table id="admin_user_modi_table">
+		<tr>
+			<td>Board Name</td>
+			<td>Board Type</td>
+			<td>Board Discription</td>
+		</tr>
+	</table>
+	
+</div>	

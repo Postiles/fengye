@@ -484,7 +484,7 @@ postile.view.post_board.PostBoard.prototype.initView = function() {
     this.viewport.rel_data = this;
     this.canvas.rel_data = this;
     
-    /*********************************************************************************/
+    /********************************************************************************
     this.newbulletin = goog.dom.createDom("div");
     goog.dom.appendChild(this.canvas, this.newbulletin);
     this.newbulletin.id = "newbulletin";
@@ -1169,8 +1169,10 @@ postile.view.post_board.PostBoard.prototype.removePost = function(id) {
 }
 
 postile.view.post_board.PostBoard.prototype.updateTop = function() {
+    /*
     console.log(this.newbulletin.parentNode.parentNode.scrollLeft);
     this.realbulletin.style.left = (window.innerWidth - this.realbulletin.offsetWidth) / 2 + this.newbulletin.parentNode.parentNode.scrollLeft + 'px';
+    */
 }
 
 /**
