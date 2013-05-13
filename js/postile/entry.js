@@ -50,7 +50,6 @@ postile.entry.init = function() {
     }
 };
 
-
 /**
  * Initialize the router map.
  * Originally known as postile.router_map.
