@@ -446,9 +446,9 @@ postile.view.post_board.PostBoard.prototype.initView = function() {
     goog.dom.appendChild(this.catchall, this.viewport);
     goog.dom.appendChild(this.viewport, this.canvas);
 
+    goog.dom.appendChild(goog.dom.getElement("wrapper"), this.new_navigator.container);
     goog.dom.appendChild(goog.dom.getElement("wrapper"), this.header.container);
     goog.dom.appendChild(goog.dom.getElement("wrapper"), this.catchall);
-    goog.dom.appendChild(goog.dom.getElement("wrapper"), this.new_navigator.container);
 
     postile.data_manager.getUserData(localStorage.postile_user_id, function(data) {
         if(data.user_id){ // login and show
