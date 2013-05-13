@@ -1,11 +1,11 @@
-$main-color: #024d61;
+$main-color: #3a3a3a;
 $text-color: #eeeeee;
-$input-background: #bad1d7;
+$input-background: #ddd;
 
 html, body {
     #signup_wrapper {
         height: 100%;
-        background: #024d61;
+        background: #3a3a3a;
         color: $text-color;
         font-family:HelveticaNeue;
 
@@ -68,7 +68,7 @@ html, body {
             margin-top:210px;
             right: 0px;
             color:$main-color;
-            background:#cbdcb8;
+            background:#ccc;
             height:210px;
             width:210px;
             cursor: pointer;

@@ -1,6 +1,6 @@
 html #signup_wrapper, body #signup_wrapper {
   height: 100%;
-  background: #3a3a3a;
+  background: #024d61;
   color: #eeeeee;
   font-family: HelveticaNeue; }
   html #signup_wrapper a:link, body #signup_wrapper a:link {
@@ -31,7 +31,7 @@ html #signup_wrapper, body #signup_wrapper {
       padding: 0px 8px;
       padding-top: 3px;
       font-size: 25px;
-      background: #ddd;
+      background: #bad1d7;
       border: 0px;
       width: 725px;
       height: 36px;
@@ -47,8 +47,8 @@ html #signup_wrapper, body #signup_wrapper {
     position: absolute;
     margin-top: 210px;
     right: 0px;
-    color: #3a3a3a;
-    background: #ccc;
+    color: #024d61;
+    background: #cbdcb8;
     height: 210px;
     width: 210px;
     cursor: pointer;
