@@ -18,11 +18,13 @@ postile.user.login = function(username, password, onsuccess, onfail) {
                     xhr2 = new XMLHttpRequest();
 
                     xhr2.onreadystatechange = function() {
-                        var data = JSON.parse(xhr2.responseText);
                         if (xhr2.readyState == 4) {
                             if (xhr2.status == 200) {
+                                var data = JSON.parse(xhr2.responseText);
                                 if (data.status == 'ok') {
                                     window.location = 'http://fengye.postiles.com/signup';
+                                } else {
+                                    onfail();
                                 }
                             }
                         }
